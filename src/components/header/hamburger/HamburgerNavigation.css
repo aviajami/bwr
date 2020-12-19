@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .wrapper{
+      position: relative;
+      top: 20px;
+      
+      /* transform: translate(-50%,-50%); */
+      max-width: 10%;
+      width: 10%;
+  }
+  
+  .navbar{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 2.5px solid #F39D2D;
+    cursor: pointer;
+     transition: all 0.3s ease;
+  }
+  
+  .navbar div{
+    height: 4px;
+    width: 30px;
+    background-color: #fff;
+    position: absolute;
+     transition: all 0.5s ease;
+  }
+  
+  .navbar .first{
+    top: 13px;
+    left: 10px;
+  }
+  
+  .navbar .second{
+    top: 22px;
+    left: 10px;
+  }
+  
+  .navbar .third{
+    top: 32px;
+    left: 10px;
+  }
+  
+  .navbar:hover .first {
+     transform: translateY(10px) rotate(45deg);
+     transition: all 0.5s ease;
+  }
+  
+  .navbar:hover .second {
+     opacity: 0;
+    transition: all 0.2s ease;
+   
+  }
+  
+  .navbar:hover .third{
+    transform: translateY(-10px) rotate(-45deg);
+     transition: all 0.5s ease;
+  }
+  
+  .navbar:hover{
+     border-radius:25%;
+     transition: all 0.3s ease;  
+  }
+  
